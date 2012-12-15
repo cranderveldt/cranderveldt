@@ -1,0 +1,83 @@
+/*  
+Theme Name: Crander
+Theme URI: http://cranderveldt.com
+Description: Theme designed by cranderveldt.
+Author: <a href="http://cranderveldt.com">Cranderveldt</a>   
+Author URI: http://cranderveldt.com
+Version: 1.0 
+License: Copyright (c) 2012 Cranderveldt
+License URI: http://cranderveldt.com
+*/
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+
+del { text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/*End Reset*/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* html .clearfix { zoom: 1; }
+
+/* IE6 */
+*:first-child + html .clearfix { zoom: 1; }
+
+/* IE7 */
+.align-right { float: right; margin: 0 0 15px 15px; }
+
+.alignright { float: right; margin: 0 0 15px 15px; }
+
+.align-left { float: left; margin: 0 15px 15px 0; }
+
+.alignleft { float: left; margin: 0 15px 15px 0; }
+
+blockquote p { line-height: 2em; }
+
+a { color: #444; text-decoration: none; }
+a:hover { color: #999; }
+
+h1 { font-size: 36px; margin-bottom: 15px; font-family: 'Fenix', serif; }
+
+h2 { font-size: 28px; margin-bottom: 15px; }
+
+h3 { font-size: 24px; margin-bottom: 5px; }
+
+h4 { font-size: 20px; }
+
+h5 { font-size: 16px; }
+
+h6 { font-size: 14px; }
+
+p { margin-bottom: 15px; }
+
+br { display: none; }
+
+.comments, .post-edit-link { display: none; }
+
+body { background: #DDD; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.4; }
+body #container { width: 960px; padding: 20px; background: #FFF; margin: 20px auto; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+
+header { position: relative; }
+header h1 { font-size: 100px; line-height: 1; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #DDD; }
+header small { position: absolute; right: 0; top: 69px; }
+header nav ul li { display: inline; }
+header nav ul li a { font-family: 'Fenix', serif; float: left; display: block; margin-right: 10px; font-size: 24px; padding: 4px 8px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -webkit-transition: width 0.3s linear; -moz-transition: width 0.3s linear; -o-transition: width 0.3s linear; transition: width 0.3s linear; width: 24px; overflow: hidden; }
+header nav ul li a:hover { background: #444; color: #FFF; width: auto; }
+header nav ul li a span.ss-icon { position: relative; top: 3px; }
+header nav ul li a span.title { margin-left: 10px; }

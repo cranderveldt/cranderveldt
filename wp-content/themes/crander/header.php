@@ -1,0 +1,52 @@
+<?php
+/*
+Copyright (c) 2012 Cranderveldt
+Use under terms of MIT license
+*/
+global $post;
+$redirect = get_post_meta($post->ID, 'redirect', true);
+if ($redirect)
+  wp_redirect($redirect);
+?>
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]>
+<html lang="en" class="no-js oldie ie6">
+<![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="no-js oldie ie7">
+<![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="no-js oldie ie8">
+<![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="no-js ie9">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <?php wp_enqueue_script("jquery"); ?>
+  <?php wp_head(); ?>
+  <meta charset="UTF-8">
+  <meta name="description" content="<?php bloginfo('name'); ?> <?php wp_title(); ?> | <?php bloginfo('description'); ?>" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/symbolset.css" type="text/css" media="screen" />
+  <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/script.js"></script>
+  <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/symbolset.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+    
+<body class="body-<?php the_ID(); ?>">
+  <section id="container" class="clearfix">
+    <header class="clearfix">               
+      <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+      <small><?php bloginfo('description'); ?></small>
+      <nav id="menu" class="clearfix">
+        <?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
+      </nav>
+    </header>
+    <section id="content">
