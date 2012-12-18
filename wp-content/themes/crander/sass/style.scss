@@ -313,6 +313,9 @@ footer {
 }
 /* Responsive stuff */
 @media (max-width: 767px) {
+  header h1 {
+    font-size: 50px;
+  }
   header .navigation {
     padding: 0 20px;
     nav {
@@ -352,6 +355,9 @@ footer {
   #content .hero-unit {
     border: 0;
     padding: 20px 0 0;
+    h1 {
+      font-size: 30px;
+    }
     &:before, &.after {
       display: none;
     }
