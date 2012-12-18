@@ -115,7 +115,7 @@ footer > div { padding: 0 20px; }
   header small { font-size: 12px; }
   header .navigation { padding: 0 20px; }
   header .navigation nav ul li a { margin-bottom: 3px; }
-  header .navigation nav ul li a span.ss-icon { font-size: 18px; width: 5%; }
+  header .navigation nav ul li a span.ss-icon { font-size: 18px; width: 5%; top: 0; }
   header .navigation nav ul li a span.title { display: block; left: 10% !important; width: 80%; top: -7px; font-size: 18px; padding: 5px 5%; margin: 0; background: #245b88; }
   header .navigation nav ul li a span.title:after { content: ""; position: absolute; top: 50%; width: 0; height: 0; left: -8px; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 8px solid #245b88; margin-top: -8px; }
   #content .hero-unit { border: 0; padding: 20px 0 0; }
