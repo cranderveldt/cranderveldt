@@ -2,21 +2,21 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="post" id="post-<?php the_ID(); ?>">
-
         <?php if (!is_page('Blog')) { ?>
-        <h2 id="h2-<?php the_ID(); ?>" class="pagetitle"><?php the_title(); ?></h2>
+        <div class="post row-fluid post-title" id="post-title-<?php the_ID(); ?>">
+            <div class="span12">
+                <h2 class="page-title"><?php the_title(); ?></h2>
+            </div>
+        </div>
         <?php } ?>
-
+    <div class="post row-fluid" id="post-<?php the_ID(); ?>">
         <?php the_content(__('Read the rest of this page &raquo;')); ?>
         <?php wp_link_pages(); ?>
         
         <?php edit_post_link(__('Edit'), '<p>', '</p>'); ?>
-        
     </div>
-    <div class="post comments"><?php comments_template(); ?></div>
+    <div class="post comments" style="display: none;"><?php comments_template(); ?></div>
     <?php endwhile; endif; ?>
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>

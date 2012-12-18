@@ -41,31 +41,29 @@
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <div class="post" id="post-<?php the_ID(); ?>">
-
-                <h2 class="posttitle">
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent link to'); ?> <?php the_title(); ?>"><?php the_title(); ?></a>
-                </h2>
-
-                <p class="postmeta">
-                    <span class="post-date">Posted on <?php the_time('j M, Y') ?></span>&nbsp;&bull;
-                    <span class="post-tags">Tags: <?php the_tags('', ' ',''); ?></span>&nbsp;&bull;
-                    <span class="post-cmts"><?php comments_popup_link(__('Post a Comment'), __('1 Comment'), __('% Comments'), 'commentslink', __('Comments off')); ?></span>
-                    <?php edit_post_link(__('Edit'), ' &#183; ', ''); ?>
-                </p>
-
-                <div class="postentry">
+            <div class="post row-fluid post-title" id="post-title-<?php the_ID(); ?>">
+                <div class="span12">
+                    <h2>
+                        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent link to'); ?> <?php the_title(); ?>"><?php the_title(); ?></a>
+                    </h2>
+                </div>
+            </div>
+            <div class="post row-fluid post-meta" id="post-meta-<?php the_ID(); ?>">
+                <div class="span12">
+                    <p>
+                        <span class="post-date">Posted on <?php the_time('j M, Y') ?></span>&nbsp;&bull;
+                        <span class="post-tags">Tags: <?php the_tags('', ' ',''); ?></span>&nbsp;&bull;
+                        <span class="post-cmts"><?php comments_popup_link(__('Post a Comment'), __('1 Comment'), __('% Comments'), 'commentslink', __('Comments off')); ?></span>
+                        <?php edit_post_link(__('Edit'), ' &#183; ', ''); ?>
+                    </p>
+                </div>
+            </div>
+            <div class="post row-fluid title" id="post-<?php the_ID(); ?>">
                 <?php if (is_search()) { ?>
                     <?php the_excerpt() ?>
                 <?php } else { ?>
                     <?php the_content(__('Read the rest of this entry &raquo;')); ?>
                 <?php } ?>
-                </div>
-
-                <!--
-                <?php trackback_rdf(); ?>
-                -->
-
             </div>
 
         <?php endwhile; ?>
@@ -81,8 +79,8 @@
 
     <?php else : ?>
 
-        <div class="post">
-            <h2><?php _e('Error 404 - Not Found'); ?></h2>
+        <div class="post row-fluid title">
+            <div class="span12"><h2><?php _e('Error 404 - Not Found'); ?></h2></div>
         </div>
 
     <?php endif; ?>

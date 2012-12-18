@@ -29,9 +29,11 @@ if ($redirect)
   <meta name="description" content="<?php bloginfo('name'); ?> <?php wp_title(); ?> | <?php bloginfo('description'); ?>" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-  <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/symbolset.css" type="text/css" media="screen" />
-  <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/bootstrap-responsive.min.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/symbolset.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/script.js"></script>
   <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/symbolset.js"></script>
@@ -41,12 +43,30 @@ if ($redirect)
 </head>
     
 <body class="body-<?php the_ID(); ?>">
-  <section id="container" class="clearfix">
-    <header class="clearfix">               
-      <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-      <small><?php bloginfo('description'); ?></small>
-      <nav id="menu" class="clearfix">
-        <?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
-      </nav>
+  <section id="container" class="container-fluid">
+    <header class="row-fluid">
+      <div class="span5 logo">
+        <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+        <small><?php bloginfo('description'); ?></small>
+      </div>
+      <div class="span7 navigation">
+        <nav id="menu" class="clearfix">
+          <?php wp_nav_menu(array( 
+            'theme_location'  => 'menu-1',
+            'menu'            => '', 
+            'container'       => false,
+            'menu_class'      => 'menu row-fluid', 
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => ''
+          )); ?>
+        </nav>
+      </div>
     </header>
     <section id="content">
