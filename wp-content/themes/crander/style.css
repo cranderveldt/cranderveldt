@@ -112,6 +112,7 @@ footer > div { padding: 0 20px; }
 
 /* Responsive stuff */
 @media (max-width: 767px) { header h1 { font-size: 50px; }
+  header small { font-size: 12px; }
   header .navigation { padding: 0 20px; }
   header .navigation nav ul li a { margin-bottom: 3px; }
   header .navigation nav ul li a span.ss-icon { font-size: 18px; width: 5%; }
@@ -123,5 +124,5 @@ footer > div { padding: 0 20px; }
   #content .row-fluid > div { margin-bottom: 20px; }
   .body-29 #content .row-fluid > div { margin: 0; }
   footer p { text-align: center; margin-bottom: 10px; }
-  #footer-nav { width: 70%; margin: 0 auto; }
+  #footer-nav { width: 80%; margin: 0 auto; }
   #footer-nav li { float: left; width: 12.5%; text-align: center; font-size: 20px; } }

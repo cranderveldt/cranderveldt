@@ -316,6 +316,9 @@ footer {
   header h1 {
     font-size: 50px;
   }
+  header small {
+    font-size: 12px;
+  }
   header .navigation {
     padding: 0 20px;
     nav {
@@ -373,7 +376,7 @@ footer {
     margin-bottom: 10px;
   }
   #footer-nav {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     li {
       float: left;
