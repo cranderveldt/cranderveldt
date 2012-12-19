@@ -9,7 +9,7 @@
             </div>
         </div>
         <?php } ?>
-    <div class="post row-fluid" id="post-<?php the_ID(); ?>">
+    <div class="post" id="post-<?php the_ID(); ?>">
         <?php the_content(__('Read the rest of this page &raquo;')); ?>
         <?php wp_link_pages(); ?>
         

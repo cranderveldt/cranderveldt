@@ -58,7 +58,7 @@
                     </p>
                 </div>
             </div>
-            <div class="post row-fluid title" id="post-<?php the_ID(); ?>">
+            <div class="post" id="post-<?php the_ID(); ?>">
                 <?php if (is_search()) { ?>
                     <?php the_excerpt() ?>
                 <?php } else { ?>

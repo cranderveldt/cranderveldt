@@ -17,7 +17,7 @@
                 <?php edit_post_link(__('Edit'), ' &#183; ', ''); ?>
             </p>
         </div>
-        <div class="post row-fluid post-entry" id="post-<?php the_ID(); ?>">
+        <div class="post post-entry" id="post-<?php the_ID(); ?>">
             <?php the_content(__('Read the rest of this entry &raquo;')); ?>
             <?php wp_link_pages(); ?>
         </div>
