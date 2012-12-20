@@ -211,6 +211,9 @@ header {
 }
 #content {
   padding: 20px;
+  .entry {
+    margin-bottom: 20px;
+  }
   h2 {
     font-size: 30px;
     color: $blue;

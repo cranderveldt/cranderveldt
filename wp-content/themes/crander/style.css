@@ -82,6 +82,7 @@ header nav ul li a span.title:after { content: ""; position: absolute; left: 50%
 #container { padding: 0; }
 
 #content { padding: 20px; }
+#content .entry { margin-bottom: 20px; }
 #content h2 { font-size: 30px; color: #2c71a8; }
 #content h5 { color: #2c71a8; }
 #content p { color: #5b7a93; }
