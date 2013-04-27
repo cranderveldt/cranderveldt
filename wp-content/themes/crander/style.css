@@ -105,6 +105,7 @@ header nav ul li a span.title:after { content: ""; position: absolute; left: 50%
 .cycle-slideshow .nav { position: absolute; top: -40px; }
 .cycle-slideshow .nav.cycle-next { right: 0; }
 .cycle-slideshow .nav.cycle-prev { left: 0; }
+.cycle-slideshow img { margin: 0 auto; left: 0; right: 0; }
 
 .max1400 { max-width: 1400px; margin: 0 auto; }
 .max1400#content { max-width: 1360px; }
