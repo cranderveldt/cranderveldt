@@ -297,9 +297,10 @@ header {
 }
 .cycle-slideshow {
   height: 1300px;
+  margin-top: 30px;
   .nav {
     position: absolute;
-    top: 0;
+    top: -40px;
     &.cycle-next {
       right: 0;
     }
