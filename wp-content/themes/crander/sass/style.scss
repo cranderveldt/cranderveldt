@@ -297,6 +297,16 @@ header {
 }
 .cycle-slideshow {
   height: 1300px;
+  .nav {
+    position: absolute;
+    top: 0;
+    &.cycle-next {
+      right: 0;
+    }
+    &.cycle-prev {
+      left: 0;
+    }
+  }
 }
 .max1400 {
   max-width: 1400px;
