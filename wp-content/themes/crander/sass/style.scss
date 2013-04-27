@@ -237,10 +237,10 @@ header {
     }
   }
   .hero-unit {
-    padding: 0;
     background: transparent;
     border-right: 1px solid $border;
-    padding: 20px 20px 0 0;
+    padding: 20px 20px 30px 0;
+    margin-bottom: 0;
     position: relative;
     &:before,
     &:after {
@@ -368,7 +368,7 @@ footer {
   }
   #content .hero-unit {
     border: 0;
-    padding: 20px 0 30px;
+    padding: 20px 0 0 0;
     margin-bottom: 0;
     h1 {
       font-size: 30px;
@@ -397,8 +397,6 @@ footer {
       font-size: 20px;
     }
   }
-}
-@media (max-width: 767px) {
   .body-29 #content .recent-projects .span4 {
     margin-bottom: 15px;
   }
