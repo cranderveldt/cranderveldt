@@ -295,6 +295,13 @@ header {
     }
   }
 }
+.max1400 {
+  max-width: 1400px;
+  margin: 0 auto;
+  &#content {
+    max-width: 1360px;
+  }
+}
 footer {
   font-size: 12px;
   border-top: 1px solid #e3e1e1;
@@ -388,5 +395,10 @@ footer {
       text-align: center;
       font-size: 20px;
     }
+  }
+}
+@media (max-width: 767px) {
+  .recent-projects .span4 {
+    margin-bottom: 15px;
   }
 }
