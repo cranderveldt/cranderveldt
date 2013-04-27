@@ -222,7 +222,7 @@ header {
     color: $blue;
   }
   p {
-    color: $blue-gray;
+    color: darken($blue-gray, 20%);
   }
   a.more {
     font-size: 14px;
