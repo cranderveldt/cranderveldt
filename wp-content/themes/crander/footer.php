@@ -2,7 +2,7 @@
         <div class="max1400">
           <div class="row-fluid">
             <div class="span8">
-                <p>&copy; Copyright 2012 Trevor Moore&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">Contact Me</a></p>
+                <p>&copy; Copyright 2013 Trevor Moore&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">Contact Me</a></p>
             </div>
             <div class="span4">
               <nav id="footer-nav">
