@@ -121,6 +121,8 @@ footer > div { padding: 0 20px; }
 
 #post-title-29 { display: none; }
 
+.website-thumbs img { -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, 0.5); box-shadow: 0 0 10px rgba(100, 100, 100, 0.5); }
+
 #sidebar { display: none; }
 
 /* Responsive stuff */
