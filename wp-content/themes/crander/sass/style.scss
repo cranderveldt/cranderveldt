@@ -274,7 +274,7 @@ header {
   }
   .home-side {
     color: $blue-gray;
-    padding: 20px 0 0 0;
+    padding: 20px 0;
     p {
       font-size: 16px;
     }
@@ -368,7 +368,8 @@ footer {
   }
   #content .hero-unit {
     border: 0;
-    padding: 20px 0 0;
+    padding: 20px 0 30px;
+    margin-bottom: 0;
     h1 {
       font-size: 30px;
     }
