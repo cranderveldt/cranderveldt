@@ -36,6 +36,7 @@ if ($redirect)
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/cycle2.js"></script>
   <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/script.js"></script>
   <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/symbolset.js"></script>
   <!--[if lt IE 9]>
