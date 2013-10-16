@@ -1,11 +1,8 @@
 module.exports = function(grunt) {
     "use strict";
-    
-    // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         
-          
         sass: {
             dist: {
                 options: {
@@ -14,7 +11,7 @@ module.exports = function(grunt) {
                     lineNumbers: false
                 },
                 files: {
-                    'wp-content/themes/crander/style.css': 'wp-content/themes/crander/sass/styles.scss', // 'destination': 'source'
+                    'wp-content/themes/crander/style.css': 'wp-content/themes/crander/sass/style.scss', // 'destination': 'source'
                 }
             }
         },
