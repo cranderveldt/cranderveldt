@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                     lineNumbers: false
                 },
                 files: {
-                    'wp-content/themes/crander/styles.css': 'wp-content/themes/crander/sass/styles.scss', // 'destination': 'source'
+                    'wp-content/themes/crander/style.css': 'wp-content/themes/crander/sass/styles.scss', // 'destination': 'source'
                 }
             }
         },
