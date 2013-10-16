@@ -30,8 +30,6 @@ if ($redirect)
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
-  <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/bootstrap-responsive.min.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/symbolset.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
