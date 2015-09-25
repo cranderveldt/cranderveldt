@@ -231,12 +231,12 @@
     }
   }
 }
-@mixin flex-gutters ($width: 15, $selector: 'flex-col') {
-  margin-left: rem(-$width);
-  margin-right: rem(-$width);
+@mixin flex-gutters ($width: 15px, $selector: 'flex-col') {
+  margin-left: -$width;
+  margin-right: -$width;
   & > [class*="#{$selector}"] {
-    padding-left: rem($width);
-    padding-right: rem($width);
+    padding-left: $width;
+    padding-right: $width;
   }
 }
 @mixin flex-order ($order: 1) {
@@ -288,22 +288,22 @@
   @include flex-row-at($tablet);
 }
 .flex-gutters-20 {
-  @include flex-gutters(20);
+  @include flex-gutters(20px);
 }
 .flex-gutters-15 {
-  @include flex-gutters(15);
+  @include flex-gutters(15px);
 }
 .flex-gutters-10 {
-  @include flex-gutters(10);
+  @include flex-gutters(10px);
 }
 .flex-gutters-5 {
-  @include flex-gutters(5);
+  @include flex-gutters(5px);
 }
 .flex-gutters-8 {
-  @include flex-gutters(8);
+  @include flex-gutters(8px);
 }
 .flex-gutters-3 {
-  @include flex-gutters(3);
+  @include flex-gutters(3px);
 }
 
 .flex-order-1 {
