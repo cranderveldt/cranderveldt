@@ -5,6 +5,11 @@ $blue-gray: desaturate(lighten($blue, 5%), 35%);
 $white: #f7f7f7;
 $border: #e9e7e7;
 
+$mobile: 480;
+$tablet: 768;
+$desktop: 1000;
+$container: 1000;
+
 @mixin round($radius) {
   -webkit-border-radius: $radius; 
           border-radius: $radius;
@@ -27,6 +32,31 @@ $border: #e9e7e7;
      -moz-transition: $type $speed linear;
        -o-transition: $type $speed linear;
           transition: $type $speed linear;
+}
+$viewport-width: false !default;
+@mixin above-width($width: $tablet) {
+  // @if $viewport-width {
+  //   @if $viewport-width >= $width {
+  //     @content;
+  //   }
+  // }
+  // @else {
+    @media screen and (min-width: rem($width)) {
+      @content;
+    }
+  // }
+}
+@mixin below-width($width: $tablet) {
+  // @if $viewport-width {
+  //   @if $viewport-width <= $width {
+  //     @content;
+  //   }
+  // }
+  // @else {
+    @media screen and (max-width: rem($width)) {
+      @content;
+    }
+  // }
 }
 /*  
 Theme Name: Crander

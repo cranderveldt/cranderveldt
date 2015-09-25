@@ -1,0 +1,354 @@
+
+@mixin quick-flex($justify: space-between, $align: center, $wrap: nowrap) {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  
+  -ms-flex-wrap: $wrap;
+  -webkit-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+
+  -ms-justify-content: $justify;
+  -webkit-justify-content: $justify;
+  justify-content: $justify;
+
+  -ms-align-items: $align;
+  -webkit-align-items: $align;
+  align-items: $align;
+}
+@mixin v-flex() {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@mixin flex-wrap($wrap: wrap) {
+  -ms-flex-wrap: $wrap;
+  -webkit-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+@mixin flex-justify($justify: flex-start) {
+  -ms-justify-content: $justify;
+  -webkit-justify-content: $justify;
+  justify-content: $justify;
+}
+@mixin flex-align($align: flex-start) {
+  -ms-align-items: $align;
+  -webkit-align-items: $align;
+  align-items: $align;
+}
+
+// Extensible Flex
+
+@mixin flex-row() {
+  -ms-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  -ms-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+@mixin flex-row-at($width: 0) {
+  @if $width == 0 {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    & > .flex-col-1 {
+      width: 8.33333333333%;
+    }
+    & > .flex-col-2 {
+      width: 16.6666666667%;
+    }
+    & > .flex-col-3 {
+      width: 25%;
+    }
+    & > .flex-col-4 {
+      width: 33.3333333333%;
+    }
+    & > .flex-col-5 {
+      width: 41.6666666667%;
+    }
+    & > .flex-col-6 {
+      width: 50%;
+    }
+    & > .flex-col-7 {
+      width: 58.3333333333%;
+    }
+    & > .flex-col-8 {
+      width: 66.6666666667%;
+    }
+    & > .flex-col-9 {
+      width: 75%;
+    }
+    & > .flex-col-10 {
+      width: 83.3333333333%;
+    }
+    & > .flex-col-11 {
+      width: 91.6666666667%;
+    }
+    & > .flex-col-12 {
+      width: 100%;
+    }
+  } @else {
+    @include above-width($width) {
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      & > .flex-col-1 {
+        width: 8.33333333333%;
+      }
+      & > .flex-col-2 {
+        width: 16.6666666667%;
+      }
+      & > .flex-col-3 {
+        width: 25%;
+      }
+      & > .flex-col-4 {
+        width: 33.3333333333%;
+      }
+      & > .flex-col-5 {
+        width: 41.6666666667%;
+      }
+      & > .flex-col-6 {
+        width: 50%;
+      }
+      & > .flex-col-7 {
+        width: 58.3333333333%;
+      }
+      & > .flex-col-8 {
+        width: 66.6666666667%;
+      }
+      & > .flex-col-9 {
+        width: 75%;
+      }
+      & > .flex-col-10 {
+        width: 83.3333333333%;
+      }
+      & > .flex-col-11 {
+        width: 91.6666666667%;
+      }
+      & > .flex-col-12 {
+        width: 100%;
+      }
+    }
+  }
+}
+@mixin flex-column ($size, $width) {
+  @if $width == 0 {
+    @if $size == auto {
+      width: auto;
+    }
+    @if $size == 1 {
+      width: 8.33333333333%;
+    }
+    @if $size == 2 {
+      width: 16.6666666667%;
+    }
+    @if $size == 3 {
+      width: 25%;
+    }
+    @if $size == 4 {
+      width: 33.3333333333%;
+    }
+    @if $size == 5 {
+      width: 41.6666666667%;
+    }
+    @if $size == 6 {
+      width: 50%;
+    }
+    @if $size == 7 {
+      width: 58.3333333333%;
+    }
+    @if $size == 8 {
+      width: 66.6666666667%;
+    }
+    @if $size == 9 {
+      width: 75%;
+    }
+    @if $size == 10 {
+      width: 83.3333333333%;
+    }
+    @if $size == 11 {
+      width: 91.6666666667%;
+    }
+    @if $size == 12 {
+      width: 100%;
+    }
+  } @else {
+    @include above-width($width) {
+      @if $size == auto {
+        width: auto;
+      }
+      @if $size == 1 {
+        width: 8.33333333333%;
+      }
+      @if $size == 2 {
+        width: 16.6666666667%;
+      }
+      @if $size == 3 {
+        width: 25%;
+      }
+      @if $size == 4 {
+        width: 33.3333333333%;
+      }
+      @if $size == 5 {
+        width: 41.6666666667%;
+      }
+      @if $size == 6 {
+        width: 50%;
+      }
+      @if $size == 7 {
+        width: 58.3333333333%;
+      }
+      @if $size == 8 {
+        width: 66.6666666667%;
+      }
+      @if $size == 9 {
+        width: 75%;
+      }
+      @if $size == 10 {
+        width: 83.3333333333%;
+      }
+      @if $size == 11 {
+        width: 91.6666666667%;
+      }
+      @if $size == 12 {
+        width: 100%;
+      }
+    }
+  }
+}
+@mixin flex-column-percent ($percent, $width) {
+  @if $width == 0 {
+    width: $percent;
+  } @else {
+    @include above-width($width) {
+      width: $percent;
+    }
+  }
+}
+@mixin flex-gutters ($width: 15, $selector: 'flex-col') {
+  margin-left: rem(-$width);
+  margin-right: rem(-$width);
+  & > [class*="#{$selector}"] {
+    padding-left: rem($width);
+    padding-right: rem($width);
+  }
+}
+@mixin flex-order ($order: 1) {
+  -ms-order: $order;
+  -webkit-order: $order;
+  order: $order;
+}
+@mixin flex-static {
+  -ms-flex-grow: 0;
+  -ms-flex-shrink: 0;
+  -webkit-flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+@mixin flex-dynamic {
+  width: 100%;
+  -ms-flex-grow: 1;
+  -ms-flex-shrink: 1;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+
+
+.flex-row {
+  -ms-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  -ms-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.flex-row-all {
+  @include flex-row-at(0);
+}
+.flex-row-mobile {
+  @include flex-row-at($mobile);
+}
+.flex-row-tablet {
+  @include flex-row-at($tablet);
+}
+.flex-gutters-20 {
+  @include flex-gutters(20);
+}
+.flex-gutters-15 {
+  @include flex-gutters(15);
+}
+.flex-gutters-10 {
+  @include flex-gutters(10);
+}
+.flex-gutters-5 {
+  @include flex-gutters(5);
+}
+.flex-gutters-8 {
+  @include flex-gutters(8);
+}
+.flex-gutters-3 {
+  @include flex-gutters(3);
+}
+
+.flex-order-1 {
+  @include flex-order(1);
+}
+.flex-order-2 {
+  @include flex-order(2);
+}
+
+.v-flex-row {
+  @include quick-flex($align: stretch);
+  @include v-flex;
+}
+.static, .flex-static {
+  @include flex-static;
+}
+.dynamic, .flex-dynamic {
+  @include flex-dynamic;
+  width: auto;
+}
+
+.flex-config-wrap {
+  @include flex-wrap;
+}
+.flex-config-left {
+  @include flex-justify;
+}
+.flex-config-right {
+  @include flex-justify(flex-end);
+}
+.flex-config-justify-center {
+  @include flex-justify(center);
+}
+.flex-config-align-center {
+  @include flex-align(center);
+}
+.flex-config-top {
+  @include flex-align;
+}
+.flex-config-stretch {
+  @include flex-align(stretch);
+}
+.flex-config-bottom {
+  @include flex-align(flex-end);
+}
+.flex-config-spaced {
+  @include flex-justify(space-between);
+}
