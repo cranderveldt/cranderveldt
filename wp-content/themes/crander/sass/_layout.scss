@@ -81,6 +81,9 @@ br { display: none; }
 span.ss-icon {
   position: relative;
 }
+*, *:after, *:before { box-sizing: border-box; }
+.no-boxsizing, .no-boxsizing *, .no-boxsizing *:after, .no-boxsizing *:before { box-sizing: content-box; }
+
 .comments, .post-edit-link { display: none; }
 body {
   background: $white;
